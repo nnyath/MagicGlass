@@ -9,7 +9,7 @@ A magic mirror display that shows current weather from [OpenWeatherMap] (http://
 
 ## Getting Started
 
-Download and install [nodejs] (https://nodejs.org/en/)
+Download and install [Node.js] (https://nodejs.org/en/)
 
 Inside the directory, run
 
