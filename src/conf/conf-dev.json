@@ -1,0 +1,15 @@
+{
+    "title":"june's",
+    "subtitle":"magic mirror",
+    "weather" : {
+        "location" : "SEE OPENWEATHERAPI - LAT/LONG or CITY/ETC",
+        "appid" : "YOUR API KEY HERE",
+        "units" : "imperial"
+    },
+    "tweet" : {
+        "user" : "YOUR TWITTER ACCOUNT HERE"
+    },
+    "calendar":{
+        "url":"https://calendar.google.com/calendar/ical/YOUR GOOGLE CALENDAR.ics"
+    }
+}
