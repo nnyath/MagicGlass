@@ -51,16 +51,16 @@ After building your desired environment, modify the appropiate file in your buil
 You'll need an API key from [OpenWeatherMap] (http://openweathermap.org/api)
 and the location via OpenWeatherMap's [accepted API params] (http://openweathermap.org/current)
 
-### Calndar
+### Calendar
 
 It's suggested to use Google Calendar. To grab the iCal URL, go to the Google Caldendar's Settings > Calendars > YOUR CALENDAR > Calendar Address : iCAL
 
 ### Twitter
 Insert a valid Twitter username
 
-### License
+## License
 MIT
 
-### Author
+## Author
 [Kenny Inthirath] (kenny.inthirath@gmail.com)
 
