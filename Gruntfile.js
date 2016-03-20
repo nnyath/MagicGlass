@@ -1,14 +1,5 @@
 module.exports = function(grunt) {
 
-    var confJSONDev = 'dev/conf/conf-dev.json';
-    if(!grunt.file.exists(confJSONDev))
-        confJSONDev = 'src/conf/conf-dev.json';
-
-    var confJSON = 'dist/conf/conf.json';
-    if(!grunt.file.exists(confJSON))
-        confJSON = 'src/conf/conf.json';
-
-
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     env:{
@@ -34,20 +25,20 @@ module.exports = function(grunt) {
     ngconstant: {
         dev:{
             options: {
-                dest: 'dev/conf/constants.js',
+                dest: 'dev/js/util/constants.js',
                 name: 'constants',
             },
             constants: {
-            conf: grunt.file.readJSON(confJSONDev)
+            conf: grunt.file.readJSON('conf/conf-dev.json')
           }
         },
         prod:{
             options: {
-                dest: 'dist/conf/constants.js',
+                dest: 'dist/js/util/constants.js',
                 name: 'constants',
             },
             constants: {
-            conf: grunt.file.readJSON(confJSON)
+            conf: grunt.file.readJSON('conf/conf.json')
           }
         },
     },
@@ -56,7 +47,7 @@ module.exports = function(grunt) {
         separator: ';'
       },
       dist: {
-        src: ['src/**/*.js'],
+        src: ['src/**/*.js','dist/js/util/constants.js'],
         dest: 'dist/js/<%= pkg.name %>.js'
       }
     },
@@ -102,7 +93,7 @@ module.exports = function(grunt) {
             src:['src/tmp', 'dev/tmp']
         },
         prod:{
-            src:['dist/js/mirror-mirror.js']
+            src:['dist/js/mirror-mirror.js','dist/js/util/']
         }
     },
     copy: {
@@ -111,7 +102,7 @@ module.exports = function(grunt) {
                     {
                         expand: true,
                         cwd: 'src',
-                        src: ['**','!**/conf.json'],
+                        src: ['**','!**/*.json'],
                         dest: 'dev/'
                     }
             ]
@@ -135,12 +126,6 @@ module.exports = function(grunt) {
                         cwd: 'src/font/',
                         src: ['**'],
                         dest: 'dist/font'
-                    },
-                    {
-                        expand: true,
-                        cwd: 'src/conf/',
-                        src: ['conf.json'],
-                        dest: 'dist/conf'
                     }
             ]
         }
@@ -176,6 +161,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('dev',['env:dev','copy:dev','ngconstant:dev','jshint','preprocess:dev']);
   grunt.registerTask('prod',['env:prod','copy:prod','ngconstant:prod','preprocess:prod','jshint','concat', 'uglify','cssmin','clean:prod']);
-
 
 };

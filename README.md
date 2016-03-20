@@ -39,7 +39,7 @@ grunt prod
 
 ## Personalizing the App via Config File
 
-After building your desired environment, modify the appropiate file in your build's
+After building your desired environment, modify the appropriate file in your build. After modifying, rebuild the environment via Grunt
 ```
 /conf/conf.json
 ```
