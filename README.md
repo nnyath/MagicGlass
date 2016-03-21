@@ -3,7 +3,7 @@
 ## About
 A magic mirror display that shows current weather from [OpenWeatherMap] (http://openweathermap.org/), calendars in iCal .ics format (Google Calendars) and the latest sweet tweet from a selected Twitter account.
 
-**NOTE: Currently intended to be ran within a browser that IGNORES CORs. For the latest Chrome build, see [here](https://productforums.google.com/forum/#!msg/chrome/QW6B_aq_QxY/5GIlidHcDAAJ) For the latest Firefox build, see [here](https://github.com/spenibus/cors-everywhere-firefox-addon) (Insert the custom name preference in about:config if you want the add-on to autostart) **
+**NOTE: Currently intended to be ran within a browser that IGNORES CORs. For the latest Chrome build, see [here](https://productforums.google.com/forum/#!msg/chrome/QW6B_aq_QxY/5GIlidHcDAAJ) For the latest Firefox build, see [here](https://github.com/spenibus/cors-everywhere-firefox-addon) (Insert the custom name preference in about:config if you want the add-on to autostart)**
 
 **NOTE: Currently intended to be ran within a 1920x1080 monitor that is PHYSICALLY rotated 90 deg**
 
