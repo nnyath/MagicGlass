@@ -3,6 +3,10 @@
     src: url("../font/Aspex.ttf");
 }
 
+* {
+    cursor: none;
+}
+
 body {
     font-family: 'aspex';
     font-size:16px;
