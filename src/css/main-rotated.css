@@ -63,6 +63,7 @@ body {
     line-height: 1.3em;
     right: -8%;
     margin-top:24%;
+    text-transform: lowercase;
 }
 
 .calendar {
