@@ -3,6 +3,7 @@ dist
 node_modules
 .todo
 toDo
-.gitignore
 src/conf
 conf/my-conf.json
+conf/conf.json
+conf/conf-dev.json
